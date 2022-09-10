@@ -1,0 +1,34 @@
+{
+  "name": "bs-components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/bs-components.umd.js",
+  "module": "dist/bs-components.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "classnames": "2.3.1",
+    "cross-spawn": "7.0.3",
+    "decamelize": "4.0.0",
+    "eslint": "8.18.0",
+    "less": "^4.1.3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2"
+  }
+}

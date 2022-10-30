@@ -1,7 +1,7 @@
 {
   "name": "bs-components",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./cjs/index.js",
   "module": "./es/index.js",
   "types": "./es/index.d.ts",

@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite';
 import path from 'path';
-const decamelize = request('decamelize')
+const decamelize = require('decamelize')
 
 // 在 UMD 构建模式下为外部依赖提供一个全局变量
 export const GLOBALS = {

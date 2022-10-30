@@ -1,21 +1,39 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
+    "outDir": "./lib",
+    "rootDirs": ["src", "config"],
+    "target": "ES6",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "allowJs": true,
+    "declaration": false,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "typeRoots": ["./src/typings", "./node_modules/@types"],
+    "lib": ["ES2016", "DOM"],
+    "paths": {
+      "antd-mobile": ["src/index.ts"],
+      "antd-mobile/src/*": ["src/*"],
+      "antd-mobile/es/*": ["src/*"],
+      "demos": ["src/demos/index.ts"],
+      "testing": ["src/tests/testing"]
+    },
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noImplicitAny": true,
+    "resolveJsonModule": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules", "lib", "es", "dist", ".dumi"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "noImplicitAny": false
+    }
+  }
 }

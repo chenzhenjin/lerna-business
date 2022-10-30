@@ -2,7 +2,7 @@
  * @Author: OBKoro1
  * @Date: 2022-09-10 17:09:14
  * @LastEditors: OBKoro1
- * @LastEditTime: 2022-09-10 18:29:38
+ * @LastEditTime: 2022-09-10 22:51:13
  * @FilePath: /lern-business/website/docs/components/data-show/Test.md
  * @Description: 
  * 
@@ -12,8 +12,8 @@
 
 ### 基本使用
 
-<CodeShow fileList={['$websiteDemo/Test/Basic.tsx', '$demo/Test/Basic.css']} />
+<CodeShow fileList={['$websiteDemo/Test/Basic.tsx', '$websiteDemo/Test/Basic.css']} />
 
 ## Props
 
-<PropsTable src="$packagesComponents/Test" showDescriptionOnSummary />
+<PropsTable src="$packagesComponents/test/Test" showDescriptionOnSummary summary="属性表格" />

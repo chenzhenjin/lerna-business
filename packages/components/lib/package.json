@@ -1,0 +1,17 @@
+{
+  "name": "bs-components",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./cjs/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "typings": "./es/index.d.ts",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less",
+    "./es/index.js",
+    "./src/index.ts",
+    "./es/global/index.js",
+    "./src/global/index.ts"
+  ]
+}

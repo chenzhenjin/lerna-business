@@ -3,8 +3,8 @@ import marksy from 'marksy';
 
 import styles from './index.module.css';
 
-function PropsTable(props: { data: Record<string, any> }) {
-  const { data } = props;
+function PropsTable(props: { data: Record<string, any>, defaultValueProps: Record<string, any> }) {
+  const { data, defaultValueProps } = props;
   const compile = useMemo(() => marksy({ createElement }), []);
 
   if (!data?.props) {
@@ -23,7 +23,7 @@ function PropsTable(props: { data: Record<string, any> }) {
         </thead>
         <tbody>
           {Object.keys(data.props || {}).map((key) => {
-            const { required, description, tsType, defaultValue } = data.props[key];
+            const { required, description, tsType } = data.props[key];
             const desc = typeof description === 'string' ? compile(description).tree : description;
 
             return (
@@ -37,7 +37,7 @@ function PropsTable(props: { data: Record<string, any> }) {
                     {tsType?.raw || tsType?.name || '-'}
                   </td>
                   <td className={styles.defaultColumn} align="left">
-                    {defaultValue?.value || '-'}
+                    {defaultValueProps[key] || '-'}
                   </td>
                 </tr>
                 <tr>

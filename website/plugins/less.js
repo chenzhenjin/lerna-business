@@ -1,13 +1,3 @@
-/*
- * @Author: OBKoro1
- * @Date: 2022-09-10 16:56:27
- * @LastEditors: OBKoro1
- * @LastEditTime: 2022-09-10 16:56:42
- * @FilePath: /lern-business/website/plugins/less.js
- * @Description: 
- * 
- * Copyright (c) 2022 by 用户/公司名, All Rights Reserved. 
- */
 const decamelize = require('decamelize');
 
 module.exports = function (_, opt = {}) {

@@ -19,7 +19,7 @@ module.exports = function () {
           alias: {
             // 支持当前正在开发组件依赖包（这样依赖包就无需构建，可直接在文档中使用）
             'bs-components': path.resolve(__dirname, '../../packages/components/src'),
-            $packagesComponents: path.resolve(__dirname, '../../packages/components/src'), // 用于缩短文档路径
+            $packagesComponents: path.resolve(__dirname, '../../packages/components/src/components'), // 用于缩短文档路径
             $websiteDemo: path.resolve(__dirname, '../demo'), // 用于缩短文档路径
           },
         },

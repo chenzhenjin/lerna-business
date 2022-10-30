@@ -1,0 +1,6 @@
+$prefix-cls: "p-test";
+.#{$prefix-cls} {
+  &__content {
+    background-color: aquamarine;
+  }
+}

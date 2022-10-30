@@ -28,7 +28,6 @@ module.exports = function codeShow(source) {
     });
     // 替换可能多余的引入
     lastSource = lastSource.replace("import Playground from '@theme/Playground';", '');
-    lastSource = lastSource.replace("import Playground from '@theme/Playground'", '');
     if (/(---\n[^]*\n---)([^]*)/.test(lastSource)) {
       lastSource = lastSource.replace(/(---\n[^]*\n---)([^]*)/, `$1${extraImport}$2`);
     } else {
@@ -45,7 +44,6 @@ function replaceSource(source, code, demoSourceUrl) {
   let extraImport = '';
   let children = ((childrenMatch && childrenMatch[1]) || '').trim();
   const result = getJsxCodeAst(code);
-  // console.log(JSON.stringify(result, null, 2));
   const { props } = result
     .map((re) => {
       if (re.name === 'CodeShow') {

@@ -1,5 +1,5 @@
 {
-  "name": "bs-components",
+  "name": "brotherstudy-components",
   "private": true,
   "version": "0.0.0",
   "main": "./cjs/index.js",

@@ -1,6 +1,5 @@
 {
-  "name": "bs-components",
-  "private": true,
+  "name": "brotherstudy-components",
   "version": "1.0.0",
   "main": "./cjs/index.js",
   "module": "./es/index.js",

@@ -140,7 +140,7 @@ function OpenCodeSandbox(props: { fileList: FileListMap[]; codeSandboxPacakgeCon
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'antd/dist/antd.css';
-import 'bs-components/dist/style.css';
+import 'brotherstudy-components/dist/style.css';
 import App from './${AppName}';
 
 ReactDOM.render(

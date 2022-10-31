@@ -12,7 +12,7 @@
 
 ### 基本使用
 
-<CodeShow fileList={['$websiteDemo/Test/Basic.tsx', '$websiteDemo/Test/Basic.css']} />
+<CodeShow fileList={['$websiteDemo/Test/Basic.tsx', '$websiteDemo/Test/Basic.scss']} />
 
 ## Props
 

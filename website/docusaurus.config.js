@@ -39,7 +39,7 @@ const config = {
         "react-dom": "^17.0.2",
         antd: "4.21.3",
         classnames: "2.3.1",
-        "bs-components": componentVersion,
+        "brotherstudy-components": componentVersion,
       },
       devDependencies: {
         less: "^4.1.3",

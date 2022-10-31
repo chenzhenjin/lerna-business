@@ -46,7 +46,7 @@ export default defineConfig(() => {
       lib: {
         entry: path.resolve(__dirname, 'src/index.ts'),
         name: 'bsComponents',
-        fileName: (format) => `bs-components.${format}.js`,
+        fileName: (format) => `brotherstudy-components.${format}.js`,
       },
     },
   };
